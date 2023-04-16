@@ -26,8 +26,6 @@ describe("Login", () => {
     global.localStorage.clear();
     global.fetch = jest.fn(() => mockupLoginSuccess());
     const data = await login(MOCKUP_USER.email, MOCKUP_USER.password);
-    console.log(data);
-    console.log(data.token);
     global.localStorage.setItem("token", data.token);
     global.localStorage.setItem("profile", JSON.stringify(data));
     expect(global.localStorage.getItem("token")).toEqual(data.token);
