@@ -1,6 +1,6 @@
-// import { userName } from "../../cypress.env.js";
-const userName = "ronburgundy@noroff.no";
-const password = "reallyhardpassword333";
+import { userName } from "../../cypress.env.js";
+// const userName = "ronburgundy@noroff.no";
+// const password = "reallyhardpassword333";
 
 describe("Login using wrong password to get error message", () => {
   beforeEach(() => {

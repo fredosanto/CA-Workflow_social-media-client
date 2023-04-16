@@ -1,6 +1,6 @@
-// import { userName, password } from "../../cypress.env.js";
-const userName = "ronburgundy@noroff.no";
-const password = "reallyhardpassword333";
+import { userName, password } from "../../cypress.env.js";
+// const userName = "ronburgundy@noroff.no";
+// const password = "reallyhardpassword333";
 describe("Social Media App: Valid user login with credential", () => {
   beforeEach(() => {
     cy.visit("/");
